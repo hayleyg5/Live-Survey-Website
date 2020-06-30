@@ -1,3 +1,4 @@
+// Modified from Caroline Barriere's original file
 // required packages
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
