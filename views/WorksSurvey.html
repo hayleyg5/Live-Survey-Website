@@ -1,0 +1,127 @@
+<!-- Sources: -->
+    <!-- https://www.w3schools.com/bootstrap4/default.asp -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Works Customer Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+
+  </head>
+  
+  <body>
+    <form id="myform" action="index.php" >
+      
+    <div class="container-md p-1 my-1 bg-dark text-white">
+      <div class="row">
+            <div class="col-sm-12 d-flex align-items-center">
+              <a href="https://worksburger.com/">
+              <img src="https://worksburger.com/wp-content/uploads/2017/11/header-logo-3.png" alt="https://worksburger.com/" width="130" height="100">
+              </a>
+	      <h1 width="170" height="142" style="color: rgb(255, 140, 0)"> The Works</h1>&nbsp;&nbsp;<h1 width="170" height="142"> Customer Survey</h1>
+            </div>
+      </div>
+    </div>
+	   
+    <div class="container">
+	<div class="statement">  
+        <label><b>Please answer the following questions about 
+          <a href="https://worksburger.com/">The Works</a> website</b></label>
+	</div>
+    </div>
+	
+    <div class="container">    
+    	<div class="question">
+		<b>Why did you visit the website?</b><br>
+      	<input type="radio" name="q1" value="To order food"> To order food<br>
+      	<input type="radio" name="q1" value="To see the menu"> To see the menu<br>
+      	<input type="radio" name="q1" value="To find a restaurant location"> To find a restaurant location<br>
+      	<input type="radio" name="q1" value="Other"> Other<br>
+    	</div>
+    </div> 
+	    
+    <br>
+	    
+    <div class="container">     
+    <div class="question">
+	    <b>Were you able to accomplish your task?</b><br>
+      <input type="text" name="q2"><br>
+    </div>
+    </div>
+	    
+    <br>
+	    
+    <div class="container">
+    <div class="question">
+	    <b>How often do you visit the website?</b><br>
+      <select name="q3">
+        <option value="" selected="selected"></option>
+        <option value="First time">First time</option>
+        <option value="Somewhat often">Somewhat often</option>
+        <option value="Very often">Very often</option>
+      </select>
+    </div>
+    </div>
+	    
+    <br>
+	    
+    <div class="container">
+    <div class="question">
+	    <b>Select the statements that apply to you:</b><br>
+      <input type="checkbox" name="q4" value="I was able to find everything I needed"> I was able to find everything I needed<br>
+      <input type="checkbox" name="q4" value="I was unable to find everything I needed"> I was unable to find everything I needed<br>
+      <input type="checkbox" name="q4" value="The website was visually appealing"> The website was visually appealing<br>
+      <input type="checkbox" name="q4" value="The website was not visually appealing"> The website was not visually appealing<br>
+    </div>
+    </div>
+	    
+    <br>
+	
+    <div class="container">
+    <div class="question">
+	    <b>Will you recommend the website to others?</b><br>
+      <input type="radio" name="q5" value="Strongly disagree"> Strongly disagree<br>
+      <input type="radio" name="q5" value="Somewhat disagree"> Somewhat disagree<br>
+      <input type="radio" name="q5" value="Neutral"> Neutral<br>
+      <input type="radio" name="q5" value="Somewhat agree"> Somewhat agree<br>
+      <input type="radio" name="q5" value="Strongly agree"> Strongly agree<br>
+    </div>
+    </div>
+	    
+    <br>
+	    
+    <div class="container">
+    <div class="question">
+	    <b>Please leave any comments here:</b><br>
+      <textarea name="q6" rows="5" cols="30"></textarea>
+    </div>
+    </div>
+	    
+    <br>
+	    
+    <button type="submit" class="btn" id="bb">Submit</button>
+    <p id="thanks"></p> 
+    </form>
+	  
+	<script src="/assets/action.js"></script>
+	  
+  </body>
+  <footer>
+    <p id="signature">Website designed by: Hayley Goodman 8698359</p>
+  </footer>
+</html>

@@ -1,0 +1,51 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body style="font-family: Helvetica Neue">
+    <h1 style="color: rgb(255, 140, 0)">The Works</h1><h2>Survey Analysis</h2>
+    <h2 style="font-size:16px">Why did they visit the website?</h2>
+
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].q1 %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    
+    <h2 style="font-size:16px">Were they able to accomplish their task?</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].q2 %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    
+    <h2 style="font-size:16px">How often do they visit the website?</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].q3 %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    
+    <h2 style="font-size:16px">Statements that apply to customers:</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].q4 %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    
+    <h2 style="font-size:16px">Will they recommend this website to others?</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].q5 %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    
+    <h2 style="font-size:16px">Comments:</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].q6 %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+</body>
+</html>
