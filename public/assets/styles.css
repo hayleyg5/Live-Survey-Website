@@ -1,0 +1,47 @@
+html {
+  background-color: white;
+}
+
+body {
+  background-color: white;
+  width: 800px;
+  border: 2px solid black;
+  padding: 0px 20px 20px 20px;
+  
+}
+
+.header img {
+  float: left;
+}
+
+.header h1 {
+  position: relative;
+  color: rgb(255, 140, 0);
+}
+
+.header h2 {
+  position: relative;
+}
+
+.statement {
+  color: black;
+  font-size: 16px
+}
+
+.question {
+  font-size: 16px;
+}
+
+.btn {
+  display: block;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-size: 16px;
+}
+
+#signature {
+  text-align: left;
+  color: rgb(255, 140, 0);
+  font-style: italic;
+}
